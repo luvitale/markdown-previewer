@@ -1,19 +1,22 @@
 import './App.css';
+import TextEditor from './components/TextEditor.js';
+import TextPreview from './components/TextPreview.js';
+import './components/TextPreview.js';
 import React from 'react';
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
-  }
+    super(props);
+  };
 
   render = () => {
     return (
       <div className="App">
-        <textarea id="editor"></textarea>
-        <p id="preview"></p>
+        <TextEditor />
+        <TextPreview />
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;
