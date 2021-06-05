@@ -10,6 +10,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <textarea id="editor"></textarea>
+        <p id="preview"></p>
       </div>
     );
   }
