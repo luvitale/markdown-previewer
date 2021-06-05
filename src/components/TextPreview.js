@@ -1,4 +1,5 @@
 import React from 'react';
+import marked from 'marked';
 
 class TextPreview extends React.Component {
   constructor(props) {
@@ -9,9 +10,11 @@ class TextPreview extends React.Component {
     const { text } = this.props;
 
     return (
-      <div className="TextPreview" id="text-preview">
-        <p id="preview">{text}</p>
-      </div>
+      <div className="TextPreview" id="preview"
+        dangerouslySetInnerHTML= {{
+          __html: marked(text)
+        }}
+      />
     );
   };
 };
