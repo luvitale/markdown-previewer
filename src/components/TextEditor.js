@@ -8,7 +8,9 @@ class TextEditor extends React.Component {
   render = () => {
     return (
       <div className="TextEditor" id="text-editor">
-        <textarea id="editor"></textarea>
+        <textarea id="editor" onChange={this.props.changeText}>
+          {this.props.text}
+        </textarea>
       </div>
     );
   };

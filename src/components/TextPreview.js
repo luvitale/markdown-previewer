@@ -6,9 +6,11 @@ class TextPreview extends React.Component {
   };
 
   render = () => {
+    const { text } = this.props;
+
     return (
       <div className="TextPreview" id="text-preview">
-        <p id="preview"></p>
+        <p id="preview">{text}</p>
       </div>
     );
   };
