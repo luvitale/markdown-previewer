@@ -14,11 +14,13 @@ class TextPreview extends React.Component {
     const { text } = this.props;
 
     return (
-      <div className="TextPreview" id="preview"
-        dangerouslySetInnerHTML= {{
-          __html: marked(text)
-        }}
-      />
+      <div className="TextPreview" id="text-preview">
+        <div id="preview"
+          dangerouslySetInnerHTML= {{
+            __html: marked(text)
+          }}
+        />
+      </div>
     );
   };
 };

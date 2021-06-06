@@ -111,6 +111,8 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ![LuVitale](https://luvitale.net/favicon.ico)
+
+Done by [Luciano Nahuel Vitale](https://luvitale.net)
 `
 
 export default App;
